@@ -4,5 +4,8 @@ entrypoints:
         cmd: echo 1
     web:
         cmd: python app.py
+        ports:
+            - 5000/tcp
+	network_mode: host
 build:
     - pip install flask
