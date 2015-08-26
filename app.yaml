@@ -2,4 +2,6 @@ appname: test
 entrypoints:
     entry1:
         cmd: echo 1
-build: echo 2
+    web:
+        cmd: python app.py
+build: pip install flask
