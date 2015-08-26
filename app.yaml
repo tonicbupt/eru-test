@@ -6,6 +6,6 @@ entrypoints:
         cmd: python app.py
         ports:
             - "5000/tcp"
-	network_mode: host
+        network_mode: host
 build:
     - pip install flask
