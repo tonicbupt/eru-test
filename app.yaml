@@ -4,4 +4,6 @@ entrypoints:
         cmd: echo 1
     web:
         cmd: python app.py
-build: pip install flask
+build:
+    - apt-get install python-pip python-dev -y
+    - pip install flask
