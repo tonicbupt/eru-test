@@ -5,5 +5,4 @@ entrypoints:
     web:
         cmd: python app.py
 build:
-    - apt-get install python-pip python-dev -y
     - pip install flask
